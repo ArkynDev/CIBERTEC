@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo CiberTec</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="script.js"></script>
+    <script src="https://sheetdb.io/handlebars.js"></script>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div id="game-list" data-sheetdb-url="https://sheetdb.io/api/v1/b543lj5zavhqr">
+            <div id="game-card">
+                <div id="game-img">
+                    <p>{{Console}}</p>
+                    <img src={{Cover}} alt="game-cover">
+                </div>
+                <div id="game-detail">
+                    <p>{{Name}}</p>
+                    <p>{{description}}</p>
+                    <div id="game-config">
+                        <div class="config-container">
+                            <div class="config">
+                                <p>Roda ISO? <br> {{ISO}}</p>
+                                <p>Tamanho ISO: <br> {{Tamanho ISO}}gb</p>
+                            </div>
+                            <div class="config">
+                                <p>Roda ZSO? <br> {{ZSO}}</p>
+                                <p>Tamanho ZSO: <br> {{Tamanho ZSO}}gb</p>
+                            </div>
+                        </div>
+                        <div class="config-container">
+                            <div id="multiplayer-config">
+                                <p>Co-op? <br> {{Co-op}}</p>
+                                <p>Versus? <br> {{Versus}}</p>
+                            </div>
+                        </div>
+                        <p>Max Players <br> {{Max Players}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
